@@ -1,3 +1,5 @@
+/*import fonts from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
     --primary: #222222;
@@ -93,15 +95,46 @@ a {
 
 /* Shared header and navigation */
 
-.shared-header {
-    background-color: var(--primary);
+.navbar {  
+    height: 100px;
+
+    .navbar-toggler-icon {
+        color: var(--background);
+    } 
+    
+    .site-nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
     color: var(--background);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    }
+
+    .site-nav-link:hover {
+        color: var(--accent-pink);
+    }
+
+    .site-nav-link.active {
+        outline: 2px solid var(--accent-pink);
+        outline-offset: -2px;
+        color: var(--accent-pink);
+        font-weight: bold;
+    }
+
+    .site-brand,
+    .site-tagline,
+    .drawer-title { 
+        color: var(--background);
+        font-family: var(--heading-font);
+    }
 }
 
-.site-brand,
-.site-tagline {
-    color: var(--background);
-}
+.bg-primary {
+        background-color: var(--primary);
+    }
 
 .site-logo {
     display: block;
@@ -115,26 +148,6 @@ a {
     list-style: none;
 }
 
-.site-nav-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 44px;
-    padding: 0.5rem 0.75rem;
-    color: var(--background);
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.site-nav-link:hover {
-    color: var(--accent-pink);
-}
-
-.site-nav-link.active {
-    outline: 2px solid var(--accent-pink);
-    outline-offset: -2px;
-    color: var(--accent-pink);
-}
 
 /* Shared buttons */
 
@@ -447,6 +460,10 @@ select:focus-visible {
     .home-hero {
         padding-top: 2rem;
         padding-bottom: 2rem;
+    }
+
+    .site-tagline {
+        display: none;
     }
 
     .contact-info,
