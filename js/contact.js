@@ -1,5 +1,5 @@
 
-// VYBE Contact Form - JavaScript
+// VYBE Contact Form - JavaScript Method # 2
 
 const contactForm = document.getElementById("contactForm");
 
