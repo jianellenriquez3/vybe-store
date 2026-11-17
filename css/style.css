@@ -28,9 +28,9 @@ html {
 body {
     margin: 0;
     background: radial-gradient(
-        ellipse at 0% 100%,
+        ellipse at 0% 110%,
         var(--primary) 0%,
-        var(--primary) 5%,
+        var(--primary) 12%,
         var(--accent-pink) 18%,
         var(--accent-pink) 30%,
         var(--background) 75%,
