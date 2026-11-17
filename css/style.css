@@ -30,7 +30,8 @@ body {
     background: linear-gradient(
         to bottom,
         var(--background) 0%,
-        var(--accent-pink) 65%,
+        var(--background) 45%,
+        var(--accent-pink) 80%,
         var(--primary) 100%
     );
     background-attachment: fixed;
