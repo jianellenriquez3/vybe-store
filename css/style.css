@@ -31,11 +31,11 @@ body {
         ellipse at 0% 110%,
         var(--primary) 0%,
         #302629 10%,
-        #65434B 15%,
+        #65434B 18%,
         var(--accent-pink) 20%,
-        var(--accent-pink) 35%,
-        #F8E9E9 48%,
-        var(--background) 75%,
+        var(--accent-pink) 25%,
+        #F8E9E9 60%,
+        var(--background) 85%,
         var(--background) 100%
     );
     background-attachment: fixed;
