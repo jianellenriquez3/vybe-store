@@ -27,7 +27,13 @@ html {
 
 body {
     margin: 0;
-    background-color: var(--background);
+    background: linear-gradient(
+        to bottom,
+        var(--background) 0%,
+        var(--accent-pink) 65%,
+        var(--primary) 100%
+    );
+    background-attachment: fixed;
     color: var(--primary);
     font-family: var(--body-font);
     font-size: 16px;
@@ -636,4 +642,5 @@ select:focus-visible {
         animation-iteration-count: 1 !important;
     }
 }
+
 /* VYBE Global Stylesheet */
