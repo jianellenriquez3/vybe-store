@@ -30,10 +30,10 @@ body {
     background: radial-gradient(
         ellipse at 0% 110%,
         var(--primary) 0%,
-        #302629 8%,
-        #65434B 13%,
+        #302629 10%,
+        #65434B 15%,
         var(--accent-pink) 20%,
-        var(--accent-pink) 25%,
+        var(--accent-pink) 35%,
         #F8E9E9 48%,
         var(--background) 75%,
         var(--background) 100%
