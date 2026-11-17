@@ -29,12 +29,16 @@ body {
     margin: 0;
     background: radial-gradient(
         ellipse at 0% 110%,
-        var(--primary) 0%,
-        #302629 10%,
-        #65434B 18%,
-        var(--accent-pink) 20%,
+        #222222 0%,
+        #292426 8%,
+        #34282C 13%,
+        #443139 18%,
+        #59404A 23%,
+        #754F5C 28%,
+        #A36F7E 34%,
+        #D393A5 40%,
         var(--accent-pink) 25%,
-        #F8E9E9 60%,
+        #F8E9E9 62%,
         var(--background) 85%,
         var(--background) 100%
     );
