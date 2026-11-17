@@ -27,12 +27,12 @@ html {
 
 body {
     margin: 0;
-    background: linear-gradient(
-        to bottom,
-        var(--background) 0%,
-        var(--background) 45%,
-        var(--accent-pink) 80%,
-        var(--primary) 100%
+    background: radial-gradient(
+        ellipse at 90% 100%,
+        var(--primary) 0%,
+        var(--accent-pink) 18%,
+        var(--background) 55%,
+        var(--background) 100%
     );
     background-attachment: fixed;
     color: var(--primary);
