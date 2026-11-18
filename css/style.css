@@ -347,6 +347,7 @@ a {
 
 .about-title-panel h1 {
     margin-bottom: 0;
+    color: var(--background);
 }
 
 .overlap-style {
