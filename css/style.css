@@ -279,7 +279,7 @@ a {
 }
 
 #shirt-1 {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, var(--primary) 80%), url(shirt-1.png);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, var(--primary) 80%), url(../images/shirt-1.png);
     background-repeat: no-repeat;
     background-size: 250%;
     background-position: center top;
@@ -288,7 +288,7 @@ a {
 }
 
 #shirt-2 {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, var(--primary) 90%), url(shirt-2.png);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, var(--primary) 90%), url(../images/shirt-2.png);
     background-repeat: no-repeat;
     background-size: 250%;
     background-position: center top;
@@ -297,7 +297,7 @@ a {
 }
 
 #shirt-3 {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, var(--primary) 90%), url(shirt-3.png);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, var(--primary) 90%), url(../images/shirt-3.png);
     background-repeat: no-repeat;
     background-size: 250%;
     background-position: center top;
