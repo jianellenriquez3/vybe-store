@@ -6,6 +6,7 @@
     --background: #F5F5F0;
     --accent-red: #E63946;
     --accent-pink: #F4A7BB;
+    --error-text: #B42318;
 
     --heading-font: "Noto Serif", Georgia, serif;
     --body-font: "Nunito", Arial, sans-serif;
@@ -405,7 +406,7 @@ a {
 
 .product-information.d-flex {
     justify-content: flex-start;
-    gap: 4.5rem;
+    gap: 3rem;
 }
 
 .product-control-row {
@@ -429,7 +430,7 @@ a {
 }
 
 #orderStatus.order-status-error {
-    color: var(--accent-red);
+    color: var(--error-text);
     font-weight: 700;
 }
 
@@ -447,7 +448,7 @@ a {
     border-left: 1px solid var(--primary);
     border-bottom: 1px solid var(--primary);
     border-radius: 50px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .product-quantity {
@@ -455,7 +456,7 @@ a {
     align-items: center;
     border: 1px solid var(--primary);
     border-radius: 50px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .product-size-options .vybe-size-option,
@@ -463,8 +464,8 @@ a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 40px;
-    min-height: 40px;
+    min-width: 47px;
+    min-height: 47px;
     padding: 0.5rem;
     border: 0;
     background-color: var(--background);
@@ -479,14 +480,31 @@ a {
 
 .product-size-options .vybe-size-option:first-child {
     border-left: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.product-size-options .vybe-size-option:last-child {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.product-quantity .vybe-quantity-button:first-child {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.product-quantity .vybe-quantity-button:last-child {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .product-quantity output {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 40px;
-    min-height: 40px;
+    min-width: 44px;
+    min-height: 44px;
     padding: 0.5rem;
     border-right: 1px solid var(--primary);
     border-left: 1px solid var(--primary);
@@ -497,15 +515,22 @@ a {
 .product-size-options .vybe-size-option.selected {
     background-color: var(--accent-pink);
     color: var(--primary);
-    font-weight: 700;
+    font-weight: 1000;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
 }
 
 .product-information .vybe-button {
     border-radius: 50px;
+    font-size: 20px;
+    min-height: 60px;
+    padding: 0 2rem;
 }
 
 .product-panel {
     position: relative;
+    background-color: var(--background);
 }
 
 @media (min-width: 992px) {
@@ -517,14 +542,14 @@ a {
 .product-back-button {
     position: absolute;
     top: 50%;
-    right: -1.25rem;
+    right: -1.375rem;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    margin-top: -1.25rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-top: -1.375rem;
     border: 1px solid var(--primary);
     border-radius: 50%;
     background-color: var(--background);
@@ -586,6 +611,13 @@ select:focus-visible {
     outline-offset: 3px;
 }
 
+.product-size-options .vybe-size-option:focus-visible,
+.product-quantity .vybe-quantity-button:focus-visible {
+    position: relative;
+    z-index: 1;
+    outline-offset: 2px;
+}
+
 .shared-header a:focus-visible,
 .shared-header button:focus-visible {
     outline-color: var(--accent-pink);
@@ -601,6 +633,12 @@ select:focus-visible {
     .home-hero {
         padding-top: 3rem;
         padding-bottom: 3rem;
+    }
+
+    .product-back-button {
+        top: 1rem;
+        right: 1rem;
+        margin-top: 0;
     }
 }
 
