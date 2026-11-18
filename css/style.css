@@ -114,7 +114,7 @@ a {
 /* Shared header and navigation */
 
 .navbar {  
-    height: 100px;
+    height: 100%;
 
     .navbar-toggler-icon {
         color: var(--background);
@@ -143,11 +143,21 @@ a {
     }
 
     .site-brand,
-    .site-tagline,
     .drawer-title { 
         color: var(--background);
         font-family: var(--heading-font);
     }
+    
+    .site-tagline {
+        color: var(--background);
+        font-family: var(--body-font);
+    }
+}
+
+.logo-simplified {
+    width: 20%;
+    object-fit: contain;
+    display: none;
 }
 
 .bg-primary {
@@ -155,9 +165,8 @@ a {
     }
 
 .site-logo {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    display: inline-block;
+    width: 20%;
 }
 
 .shared-navigation {
@@ -216,12 +225,39 @@ a {
 /* Home page */
 
 .home-hero {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+
+    a.vybe-button.vybe-button-primary {
+        font-size: 25px;
+        border-radius: 16px;
+    }
+
+    div.left-bleed-bg {
+        padding-bottom: 0px; 
+
+        h1 {
+            color: var(--background);
+        }
+
+        p {
+            font-weight: bold;
+            color: var(--accent-pink);
+        }
+    }
+
+    .left-bleed-bg::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -2.25rem;
+        width: 150vw;
+        z-index: -1;
+        background-color: var(--primary);
+    }
 }
 
 .home-hero h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .home-hero p {
@@ -233,25 +269,40 @@ a {
     height: auto;
     object-fit: cover;
 }
-
-.home-products {
-    padding-top: var(--section-spacing);
-    padding-bottom: var(--section-spacing);
-}
-
-.home-product-grid {
-    row-gap: 2rem;
-}
-
 .product-card {
     height: 100%;
-    color: var(--primary);
+    border: 100%;
+    border: none;
+    margin: 0px;
+    color: var(--background);
+    background: none; 
 }
 
-.product-card-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+#shirt-1 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, var(--primary) 80%), url(shirt-1.png);
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position: center top;
+    border-radius: 20px;
+    line-height: 1.5rem;
+}
+
+#shirt-2 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, var(--primary) 90%), url(shirt-2.png);
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position: center top;
+    border-radius: 20px;
+    line-height: 1.5rem;
+}
+
+#shirt-3 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, var(--primary) 90%), url(shirt-3.png);
+    background-repeat: no-repeat;
+    background-size: 250%;
+    background-position: center top;
+    border-radius: 20px;
+    line-height: 1.5rem;
 }
 
 .product-card-title {
@@ -266,10 +317,14 @@ a {
     font-weight: 700;
 }
 
+.ui-shadow {
+    box-shadow: 0 5px 10px var(--primary);
+}
+
 /* About Us page */
 
 .about-page-layout {
-    row-gap: 2rem;
+    row-gap: 1rem;
     align-items: center;
 }
 
@@ -280,12 +335,22 @@ a {
 }
 
 .about-title-panel {
+    align-self: start;
+    justify-self: start;
+    margin-top: 2rem;
+    margin-bottom: -40px;
     padding: 1.5rem;
-    background-color: var(--background);
+    background-color: var(--primary);
+    display: inline-block;
+    z-index: 2;
 }
 
 .about-title-panel h1 {
     margin-bottom: 0;
+}
+
+.overlap-style {
+    grid-area: 1/1;
 }
 
 .about-content {
@@ -611,6 +676,20 @@ select:focus-visible {
     outline-offset: 3px;
 }
 
+nav {
+    span:focus-visible, a:focus-visible, button:focus-visible, select:focus-visible {
+        outline: 4px solid var(--accent-pink);
+        outline-offset: 4px;
+    }
+}
+
+.product:focus-visible,
+.product:focus-visible * {    
+    font-weight: bold;
+    color: var(--primary);
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) 100%, var(--primary) 100%);
+}
+
 .product-size-options .vybe-size-option:focus-visible,
 .product-quantity .vybe-quantity-button:focus-visible {
     position: relative;
@@ -630,11 +709,6 @@ select:focus-visible {
         --section-spacing: 3rem;
     }
 
-    .home-hero {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-
     .product-back-button {
         top: 1rem;
         right: 1rem;
@@ -643,6 +717,31 @@ select:focus-visible {
 }
 
 @media (max-width: 767.98px) {
+    .home-hero {
+        .left-bleed-bg::before {
+            right: 0;
+        }
+    }
+
+    .product-card {
+        min-height: 500px;
+        #shirt-1, #shirt-2, #shirt-3 {
+            background-position: center center;
+            background-size: 100%;
+        }
+    }
+
+    .about-title-panel {
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .about-content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 2rem;
+    }
+    
     .contact-info,
     .contact-form {
         padding: 1.5rem;
@@ -659,16 +758,36 @@ select:focus-visible {
     :root {
         --section-spacing: 2rem;
     }
-
-    .home-hero {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-
+    
     .site-tagline {
         display: none;
     }
 
+    .site-logo {
+        display: none;
+    }
+    .logo-simplified {
+        display: block;
+    }
+    
+    .home-hero {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .product-card {
+        min-height: 280px;
+        #shirt-1, #shirt-2, #shirt-3 {
+            background-size: 100%;
+        }
+    }
+
+    .about-title-panel {
+        margin-left: 1rem;
+    }
+    
     .contact-info,
     .contact-form {
         padding: 1.25rem;
