@@ -382,6 +382,10 @@ a {
     background-color: var(--background);
 }
 
+.contact-form .vybe-button {
+    font-size: 20px;
+}
+
 .contact-form label {
     display: inline-block;
     margin-bottom: 0.4rem;
