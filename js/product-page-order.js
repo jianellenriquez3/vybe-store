@@ -23,6 +23,7 @@ if (productOrderForm) {
             orderStatus.hidden = true;
             orderStatus.classList.remove("order-status-error");
             productPanel.classList.remove("has-order-error");
+            productPanel.classList.remove("has-order-confirmation");
         });
     });
 
@@ -50,6 +51,7 @@ if (productOrderForm) {
             orderStatus.hidden = false;
             orderStatus.classList.add("order-status-error");
             productPanel.classList.add("has-order-error");
+            productPanel.classList.remove("has-order-confirmation");
             return;
         }
 
@@ -80,6 +82,7 @@ if (productOrderForm) {
         orderStatus.hidden = false;
         orderStatus.classList.remove("order-status-error");
         productPanel.classList.remove("has-order-error");
+        productPanel.classList.add("has-order-confirmation");
 
         window.location.href = mailtoLink;
     });

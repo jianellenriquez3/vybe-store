@@ -436,6 +436,32 @@ a {
     margin-bottom: 0;
 }
 
+.product-mark {
+    width: 5.5rem;
+    height: auto;
+}
+
+.product-image--shirt-1 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, var(--primary) 80%), url("../images/shirt-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.product-image--shirt-2 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, var(--primary) 90%), url("../images/shirt-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.product-image--shirt-3 {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, var(--primary) 90%), url("../images/shirt-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
 .product-information h1 {
     font-size: 1.75rem;
     font-weight: 700;
@@ -604,6 +630,10 @@ a {
     .product-panel.has-order-error .product-image {
         min-height: calc(460px + 2.25rem);
     }
+
+    .product-panel.has-order-confirmation .product-image {
+        min-height: calc(460px + 2.25rem);
+    }
 }
 
 .product-back-button {
@@ -627,6 +657,16 @@ a {
 
 /* Privacy Policy page */
 
+.privacy-policy-main {
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+}
+
+.privacy-policy-main > .container {
+    width: 86%;
+    max-width: 960px;
+}
+
 .privacy-policy-content {
     width: 100%;
     max-width: 800px;
@@ -636,7 +676,54 @@ a {
 
 .privacy-policy-content p,
 .privacy-policy-content li {
-    line-height: 1.8;
+    line-height: 1.4;
+}
+
+.privacy-policy-content p {
+    text-align: justify;
+}
+
+.privacy-policy-content > header {
+    margin-bottom: 1rem;
+}
+
+.privacy-policy-content > header h1 {
+    margin-bottom: 0;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+.privacy-policy-content > header p {
+    margin-bottom: 0.25rem;
+    font-size: 0.8rem;
+    opacity: 0.50;
+}
+
+.privacy-policy-content > header hr {
+    margin: 0;
+    border-color: var(--primary);
+    opacity: 0.6;
+}
+
+.privacy-policy-content > section {
+    margin-bottom: 1rem !important;
+}
+
+.privacy-policy-content > section p {
+    margin-bottom: 0;
+}
+
+.privacy-policy-content > section > h2 {
+    margin-bottom: 0.25rem;
+    padding-left: 0.65rem;
+    border-left: 5px solid var(--accent-red);
+    font-size: 1.25rem;
+}
+
+@media (max-width: 576px) {
+    .privacy-policy-content p {
+        text-align: left;
+    }
+
 }
 
 /* Shared footer */

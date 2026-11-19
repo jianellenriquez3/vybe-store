@@ -20,91 +20,37 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-    <!-- HEADER AND NAVIGATION -->
-    <header class="shared-header">
-        <nav class="navbar md:navbar-expand bg-primary">
-            <div class="container align-items-center flex-nowrap">
-
-                <!-- VYBE LOGO AND TAGLINE -->
-                <span class="mt-2">
-                    <a class="navbar-brand site-brand" href="home-page.html">
-                        <img class="site-logo"
-                            src="../images/vybe-logo.png"
-                            alt="VYBE logo">
-                    </a>
-
-                    <p class="site-tagline">Wear Your VYBE.</p>
-                </span>
-
-                <!-- MOBILE MENU BUTTON -->
-                <button class="btn-icon navbar-toggler"
-                    data-bs-theme="dark"
-                    type="button"
-                    data-bs-toggle="drawer"
-                    data-bs-target="#mainNav"
-                    aria-controls="mainNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
-
-                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
-                </button>
-
-                <!-- NAVIGATION DRAWER -->
-                <dialog class="drawer drawer-end"
-                    tabindex="-1"
-                    id="mainNav"
-                    data-bs-theme="dark"
-                    aria-labelledby="mainNavLabel">
-
-                    <div class="drawer-header">
-                        <h3 class="drawer-title" id="mainNavLabel">Menu</h3>
-
-                        <button type="button"
-                            class="btn-close"
-                            data-bs-theme="dark"
-                            data-bs-dismiss="drawer"
-                            aria-label="Close menu">
-                        </button>
-                    </div>
-
-                    <div class="drawer-body">
-                        <ul class="nav navbar-nav flex-nowrap md:ms-auto">
-
-                            <li class="nav-item md:ms-5">
-                                <a class="nav-link site-nav-link"
-                                    href="home-page.html">
-                                    Home
-                                </a>
-                            </li>
-
-                            <li class="nav-item md:ms-5">
-                                <a class="nav-link site-nav-link"
-                                    href="home-page.html#shirt-1">
-                                    Shop
-                                </a>
-                            </li>
-
-                            <li class="nav-item md:ms-5">
-                                <a class="nav-link site-nav-link"
-                                    href="home-page.html#about">
-                                    About
-                                </a>
-                            </li>
-
-                            <li class="nav-item md:ms-5">
-                                <a class="nav-link site-nav-link active"
-                                    href="contact.html"
-                                    aria-current="page">
-                                    Contact
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </dialog>
-            </div>
-        </nav>
-    </header>
+    <!-- NAVBAR -->
+    <nav class="navbar md:navbar-expand bg-primary">
+      <div class="container align-items-center flex-nowrap">
+        <span class="mt-2">
+          <a class="navbar-brand site-brand" href="home-page.html">
+            <img class="logo-simplified flex-shrink-0" src="../images/vybe-logo-simplified.png" alt="VYBE LOGO">
+            <img class="site-logo" src="../images/vybe-logo.png" alt="VYBE LOGO">
+          </a>
+          <p class="site-tagline">WEAR YOUR VIBE</p>
+        </span>
+        <button class="btn-icon navbar-toggler" data-bs-theme="dark" type="button"
+                data-bs-toggle="drawer" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" tabindex="-1" id="mainNav" data-bs-theme="dark" aria-labelledby="mainNavLabel">
+          <div class="drawer-header">
+            <h3 class="drawer-title" id="mainNavLabel">Menu</h3>
+            <button type="button" class="btn-close" data-bs-theme="dark" data-bs-dismiss="drawer" aria-label="Close"></button>
+          </div>
+          <div class="drawer-body">
+            <ul class="nav navbar-nav flex-nowrap md:ms-auto">
+              <li class="nav-item md:ms-5"><a class="nav-link site-nav-link" href="home-page.html">Home</a></li>
+              <li class="nav-item md:ms-5"><a class="nav-link site-nav-link" href="home-page.html#shirt-1">Shop</a></li>
+              <li class="nav-item md:ms-5"><a class="nav-link site-nav-link" href="home-page.html#about"><span>About</span></a></li>
+              <li class="nav-item md:ms-5"><a class="nav-link site-nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </dialog>
+      </div>
+    </nav>
 
     <!-- MAIN CONTENT -->
     <main>
@@ -263,19 +209,10 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="py-4 mt-auto site-footer">
-        <div class="container text-center">
-
-            <p>
-                &copy; VYBE 2026
-                <span aria-hidden="true">•</span>
-
-                <a class="footer-links" href="Privacy-policy.html">
-                    Privacy Policy
-                </a>
-            </p>
-
-        </div>
+    <footer class="py-7 mt-auto site-footer">
+      <div class="container d-flex flex-column gap-2 text-center">
+        <span class="">&copy; Vybe 2026 • <a class="footer-links" href="Privacy-policy.html">Privacy</a> </span>
+      </div>
     </footer>
 
     <!-- BOOTSTRAP JAVASCRIPT -->

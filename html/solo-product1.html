@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Don't Be Late Tee</title>
+    <title>Don't Be Late Tee | VYBE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/product-page-order.js" defer></script>
@@ -12,8 +12,14 @@
 
     <!-- NAVBAR -->
     <nav class="navbar md:navbar-expand bg-primary">
-      <div class="container">
-        <a class="navbar-brand site-brand" href="#"><h2 class="site-tagline">Wear Your Vibe.</h2></a>
+      <div class="container align-items-center flex-nowrap">
+        <span class="mt-2">
+          <a class="navbar-brand site-brand" href="home-page.html">
+            <img class="logo-simplified flex-shrink-0" src="../images/vybe-logo-simplified.png" alt="VYBE LOGO">
+            <img class="site-logo" src="../images/vybe-logo.png" alt="VYBE LOGO">
+          </a>
+          <p class="site-tagline">WEAR YOUR VIBE</p>
+        </span>
         <button class="btn-icon navbar-toggler" data-bs-theme="dark" type="button"
                 data-bs-toggle="drawer" data-bs-target="#mainNav"
                 aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,11 +31,11 @@
             <button type="button" class="btn-close" data-bs-theme="dark" data-bs-dismiss="drawer" aria-label="Close"></button>
           </div>
           <div class="drawer-body">
-            <ul class="nav navbar-nav md:ms-auto">
-              <li class="nav-item md:mx-5"><a class="nav-link site-nav-link" href="navbar-footer.html#">Home</a></li>
-              <li class="nav-item md:mx-5"><a class="nav-link site-nav-link active" aria-current="page" href="#shop">Shop</a></li>
-              <li class="nav-item md:mx-5"><a class="nav-link site-nav-link" href="#about">About</a></li>
-              <li class="nav-item md:ms-5"><a class="nav-link site-nav-link" href="contact.html#">Contact</a></li>
+            <ul class="nav navbar-nav flex-nowrap md:ms-auto">
+              <li class="nav-item md:ms-5"><a class="nav-link site-nav-link" href="home-page.html">Home</a></li>
+              <li class="nav-item md:ms-5"><a class="nav-link site-nav-link active" href="home-page.html#shirt-1">Shop</a></li>
+              <li class="nav-item md:ms-5"><a class="nav-link site-nav-link" href="home-page.html#about"><span>About</span></a></li>
+              <li class="nav-item md:ms-5"><a class="nav-link site-nav-link" href="contact.html">Contact</a></li>
             </ul>
           </div>
         </dialog>
@@ -42,14 +48,13 @@
         <div class="container">
           <div class="row justify-content-center">
             <section class="lg:col-9 border border-dark p-0 product-panel" aria-labelledby="product-title">
-              <a class="product-back-button" href="navbar-footer.html#" aria-label="Back to home">&times;</a>
+              <a class="product-back-button" href="home-page.html#shirt-1" aria-label="Back to shop">&times;</a>
               <div class="row product-page-layout g-0">
                 
-                <!-- PRODUCT IMAGE PLACEHOLDER -->
+                <!-- PRODUCT IMAGE -->
                 <div class="lg:col-5 d-flex align-self-stretch">
-                  <div class="product-image">
-                    <strong>LOGO</strong>
-                    <strong class="text-center">SHIRT 1<br>IMAGE</strong>
+                  <div class="product-image product-image--shirt-1">
+                    <img class="product-mark" src="../images/vybe-logo.png" alt="VYBE LOGO">
                     <div>
                       <strong>Don't Be Late Tee</strong>
                       <p class="product-price">₱499</p>
@@ -99,9 +104,9 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="py-7 mt-auto site-footer " id="contact">
+    <footer class="py-7 mt-auto site-footer">
       <div class="container d-flex flex-column gap-2 text-center">
-        <span class="">&copy; Vybe 2026 • <a class="footer-links" href="#privacy">Privacy</a> </span>
+        <span class="">&copy; Vybe 2026 • <a class="footer-links" href="Privacy-policy.html">Privacy</a> </span>
       </div>
     </footer>
 
