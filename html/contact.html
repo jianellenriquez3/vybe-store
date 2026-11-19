@@ -1,5 +1,7 @@
+
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,12 +23,20 @@
     <!-- HEADER AND NAVIGATION -->
     <header class="shared-header">
         <nav class="navbar md:navbar-expand bg-primary">
-            <div class="container">
+            <div class="container align-items-center flex-nowrap">
 
-                <a class="navbar-brand site-brand" href="../index.html">
-                    <h2 class="site-tagline">Wear Your VYBE.</h2>
-                </a>
+                <!-- VYBE LOGO AND TAGLINE -->
+                <span class="mt-2">
+                    <a class="navbar-brand site-brand" href="home-page.html">
+                        <img class="site-logo"
+                            src="../images/vybe-logo.png"
+                            alt="VYBE logo">
+                    </a>
 
+                    <p class="site-tagline">Wear Your VYBE.</p>
+                </span>
+
+                <!-- MOBILE MENU BUTTON -->
                 <button class="btn-icon navbar-toggler"
                     data-bs-theme="dark"
                     type="button"
@@ -39,6 +49,7 @@
                     <span class="navbar-toggler-icon" aria-hidden="true"></span>
                 </button>
 
+                <!-- NAVIGATION DRAWER -->
                 <dialog class="drawer drawer-end"
                     tabindex="-1"
                     id="mainNav"
@@ -57,27 +68,37 @@
                     </div>
 
                     <div class="drawer-body">
-                        <ul class="nav navbar-nav md:ms-auto">
-                            <li class="nav-item md:mx-5">
+                        <ul class="nav navbar-nav flex-nowrap md:ms-auto">
+
+                            <li class="nav-item md:ms-5">
                                 <a class="nav-link site-nav-link"
-                                    href="../index.html">Home</a>
+                                    href="home-page.html">
+                                    Home
+                                </a>
                             </li>
 
-                            <li class="nav-item md:mx-5">
+                            <li class="nav-item md:ms-5">
                                 <a class="nav-link site-nav-link"
-                                    href="shop.html">Shop</a>
+                                    href="home-page.html#shirt-1">
+                                    Shop
+                                </a>
                             </li>
 
-                            <li class="nav-item md:mx-5">
+                            <li class="nav-item md:ms-5">
                                 <a class="nav-link site-nav-link"
-                                    href="about.html">About</a>
+                                    href="home-page.html#about">
+                                    About
+                                </a>
                             </li>
 
                             <li class="nav-item md:ms-5">
                                 <a class="nav-link site-nav-link active"
-                                    aria-current="page"
-                                    href="contact.html">Contact</a>
+                                    href="contact.html"
+                                    aria-current="page">
+                                    Contact
+                                </a>
                             </li>
+
                         </ul>
                     </div>
                 </dialog>
@@ -92,6 +113,7 @@
         <section class="page-section">
             <div class="container text-center">
                 <h1>Contact Us</h1>
+
                 <p>
                     Have a question or need assistance?
                     We'd love to hear from you.
@@ -102,6 +124,7 @@
         <!-- CONTACT FORM AND INFORMATION -->
         <section class="page-section pt-0">
             <div class="container">
+
                 <div class="row contact-page-layout">
 
                     <!-- CONTACT FORM -->
@@ -117,8 +140,10 @@
 
                             <form id="contactForm">
 
+                                <!-- FULL NAME -->
                                 <div class="mb-3">
                                     <label for="name">Full Name</label>
+
                                     <input type="text"
                                         class="form-control"
                                         id="name"
@@ -127,8 +152,10 @@
                                         required>
                                 </div>
 
+                                <!-- EMAIL ADDRESS -->
                                 <div class="mb-3">
                                     <label for="email">Email Address</label>
+
                                     <input type="email"
                                         class="form-control"
                                         id="email"
@@ -137,8 +164,10 @@
                                         required>
                                 </div>
 
+                                <!-- SUBJECT -->
                                 <div class="mb-3">
                                     <label for="subject">Subject</label>
+
                                     <input type="text"
                                         class="form-control"
                                         id="subject"
@@ -146,8 +175,10 @@
                                         required>
                                 </div>
 
+                                <!-- MESSAGE -->
                                 <div class="mb-3">
                                     <label for="message">Message</label>
+
                                     <textarea class="form-control"
                                         id="message"
                                         name="message"
@@ -155,11 +186,13 @@
                                         required></textarea>
                                 </div>
 
+                                <!-- SUBMIT BUTTON -->
                                 <button type="submit"
                                     class="btn vybe-button vybe-button-primary">
                                     Send Message
                                 </button>
 
+                                <!-- FORM STATUS -->
                                 <p id="formStatus"
                                     class="mt-3"
                                     role="status"
@@ -176,8 +209,10 @@
 
                             <h2>Get in Touch</h2>
 
+                            <!-- CUSTOMER INQUIRIES -->
                             <div class="mb-4">
                                 <h3>Email Us</h3>
+
                                 <p>
                                     <a href="mailto:hello@examplewebsite142.com">
                                         hello@examplewebsite142.com
@@ -185,17 +220,36 @@
                                 </p>
                             </div>
 
+                            <!-- PRODUCT ORDERS -->
                             <div class="mb-4">
-                                <h3>Our Location</h3>
+                                <h3>Order Here</h3>
+
                                 <p>
-                                    Confirmed business location here.
+                                    For product orders, contact us at:
+
+                                    <a href="mailto:order@examplewebsite142.com">
+                                        order@examplewebsite142.com
+                                    </a>
                                 </p>
                             </div>
 
+                            <!-- BUSINESS ADDRESS -->
+                            <div class="mb-4">
+                                <h3>Our Location</h3>
+
+                                <p>
+                                    National Highway, Maahas,
+                                    Los Baños, Laguna,
+                                    Philippines 4031
+                                </p>
+                            </div>
+
+                            <!-- BUSINESS HOURS -->
                             <div class="mb-4">
                                 <h3>Business Hours</h3>
+
                                 <p>
-                                    Confirmed business hours here.
+                                    9:00 AM – 5:00 PM
                                 </p>
                             </div>
 
@@ -211,15 +265,16 @@
     <!-- FOOTER -->
     <footer class="py-4 mt-auto site-footer">
         <div class="container text-center">
+
             <p>
                 &copy; VYBE 2026
-                <a class="footer-links" href="privacy.html">
+                <span aria-hidden="true">•</span>
+
+                <a class="footer-links" href="Privacy-policy.html">
                     Privacy Policy
                 </a>
-                <a class="footer-links" href="terms.html">
-                    Terms and Conditions
-                </a>
             </p>
+
         </div>
     </footer>
 
@@ -230,10 +285,11 @@
         crossorigin="anonymous">
     </script>
 
-    <!-- VYBE CONTACT FORM JAVASCRIPT -->
+    <!-- VYBE GENERAL JAVASCRIPT -->
     <script src="../js/script.js" defer></script>
+
+    <!-- VYBE CONTACT FORM JAVASCRIPT -->
     <script src="../js/contact.js" defer></script>
-    
+
 </body>
 </html>
-
