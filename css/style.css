@@ -555,6 +555,7 @@ a {
 
 .product-size-options {
     display: inline-flex;
+    justify-self: center;
     align-items: center;
     border-top: 1px solid var(--primary);
     border-right: 1px solid var(--primary);
